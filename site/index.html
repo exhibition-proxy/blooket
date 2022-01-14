@@ -11,7 +11,11 @@
 </head>
 
 <body>
-
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
     <!-- count particles -->
     <div class="count-particles">
         <span class="js-count-particles">--</span> particles
@@ -46,12 +50,11 @@
         requestAnimationFrame(update);
     </script>
     <p class="hi">Blooket</p>
-    <div style="display: inline;">
-        <input style="margin: right;" class="gameID" placeholder="Game ID" type="tel" value="">
-        <div type="submit" role="button" class="joinButton" tabindex="0">
-            <img class="arrow" src="arrow.png" alt="Play!">
-        </div>
-    </div>
+
+        <form action="/get/gateway/" method="POST">
+        <input style="margin: right;" class="gameID" placeholder="Game ID">
+        <input class="joinButton" type="submit" value="→">
+        </form>
     <div class="styles__header___25QYr-camelCase" id="header"><a class="styles__linkText___3oU5z-camelCase" href="/">Blooket</a>
         <div class="styles__headerTextCenter___1rJWi-camelCase">Join a Game</div>
         <div class="styles__headerRight___1R77a-camelCase"><a class="styles__linkRight___2Uu2M-camelCase" href="https://www.blooket.com/login">Login</a></div>
