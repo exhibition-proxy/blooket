@@ -1,1 +1,7 @@
 particles.min.js
+node_modules/
+.DS_Store
+thumbs.db
+.env
+*.log
+.vscode/
