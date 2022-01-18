@@ -9,11 +9,11 @@ sanitizer = require('sanitizer'),
 fetch = require('node-fetch');
 
 const config = JSON.parse(fs.readFileSync('./config.json', {encoding:'utf8'})); 
-if (!config.prefix.startsWith('/')) {
+if(config.prefix&&!config.prefix.startsWith('/')) {
     config.prefix = `/${config.prefix}`;
 }
 
-if (!config.prefix.endsWith('/')) {
+if(config.prefix&&!config.prefix.endsWith('/')) {
    config.prefix = `${config.prefix}/`;
 }
 
